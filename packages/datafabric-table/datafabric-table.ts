@@ -21,6 +21,8 @@ interface DatafabricTableOptions {
     classes: ClassInfo;
     rowOptions: Array<number>;
     actionColumn: boolean;
+    sort: 'ascending' | 'descending'
+    search: string
 }
 
 @AlphaComponent({
@@ -49,34 +51,7 @@ export class DatafabricTable extends LitElement {
      * @param placeholder -- placeholder on the editable component
      * @param fieldMappings -- the value of this attribute will assign to the path/property name defined here
      */
-    // @AlphaAttribute({
-    //     type: ATTRIBUTE_TYPE.PROPERTY,
-    //     uiType: UI_TYPE.INPUT,
-    //     label: 'Initial Count',
-    //     defaultValue: 0,
-    //     placeholder: 'Enter label',
-    //     fieldMappings: 'value'
-    // })
 
-
-    // @AlphaAttribute({
-    //     uiType: UI_TYPE.TYPED_INPUT,
-    //     type: ATTRIBUTE_TYPE.PROPERTY,
-    //     label: 'Value',
-    //     category: 'Binding Variable',
-    //     options: [
-    //         { name: 'CO', value: 'co' },
-    //         { name: 'CMS', value: 'cms' },
-    //         { name: 'Case Instance', value: 'case_instance' },
-    //         { name: 'Task Instance', value: 'task_instance' },
-    //         { name: 'Local', value: 'local' },
-    //         { name: "Data Fabric", value: 'datafabric' }
-    //     ],
-    //     fieldMappings: {
-    //         type: 'options.mappingType',
-    //         value: 'options.modelPath',
-    //     },
-    // })
 
     @AlphaAttribute({
         uiType: UI_TYPE.DATA_MAPPING,
