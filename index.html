@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Components</title>
+        <style alphaGlobalStyle>
+            /*
+                Global styles with alphaGlobalStyle directive. This will be available in all components.
+                example render output: html`<div class="small-1">Hello World</div>` 
+             */
+            .small-1 {
+                font-size: 12px;
+            }
+            .small-2 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body style="padding: 1rem; box-sizing: border-box">
+        <div id="app"></div>
+        <script type="module" src="./index.ts"></script>
+    </body>
+</html>

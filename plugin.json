@@ -1,0 +1,9 @@
+{
+    "name": "datafabric-table",
+    "components": {
+        "selectorPrefix": "comp"
+    },
+    "modules": {
+        "idPrefix": "mod"
+    }
+}

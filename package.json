@@ -1,0 +1,25 @@
+{
+    "name": "datafabric-table",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "neutrinos build",
+        "start": "neutrinos start",
+        "serve": "neutrinos serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "lit": "^3.1.4",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "@jatahworx/alpha-annotations-lib": "^1.0.9"
+    },
+    "workspaces": ["packages/*"],
+    "type": "module"
+}
