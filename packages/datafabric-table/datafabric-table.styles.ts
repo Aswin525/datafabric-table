@@ -16,7 +16,7 @@ export const tableCardStyles = css`
   }
 
   .table-title {
-    background: #e3efff;
+    background: #cbddf6;
     padding: 14px 18px;
     display: flex;
     justify-content: space-between;
@@ -24,18 +24,23 @@ export const tableCardStyles = css`
     border-radius: 12px 12px 0 0;
   }
 
+  .title-text {
+    color : black
+  }
+
   .title-left {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #1f3c88;
+    color: #13317e;
     font-weight: 600;
   }
 
   .table-controls {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 18px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 14px 18px;
+  gap: 16px; /* optional: space between the two items */
   }
 
   .show-by {
@@ -54,7 +59,7 @@ export const tableCardStyles = css`
     display: flex;
     gap: 10px;
     align-items: center;
-    color: #6b7a99;
+    color: #1e50b5;
   }
 
   .table-wrapper {
@@ -72,7 +77,7 @@ export const tableCardStyles = css`
     font-size: 14px;
     padding: 12px;
     border-bottom: 1px solid #e6edff;
-    color: #3d5aa9;
+    color: #213877;
   }
 
   tbody td {
@@ -96,4 +101,4 @@ export const tableCardStyles = css`
 `;
 
 
-export const componentStyles = [style,tableCardStyles];
+export const componentStyles = [style, tableCardStyles];
